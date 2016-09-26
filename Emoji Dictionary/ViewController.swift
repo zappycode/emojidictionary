@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as! DefinitionViewController
         defVC.emoji = sender as! Emoji
     }
